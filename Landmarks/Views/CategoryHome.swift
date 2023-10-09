@@ -9,10 +9,15 @@ import SwiftUI
 
 struct CategoryHome: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Text("Hello, World!")
+                .navigationTitle("Featured")
+        }
     }
 }
 
-#Preview {
-    CategoryHome()
+struct CategoryHome_Previews: PreviewProvider {
+    static var previews: some View {
+        CategoryHome()
+    }
 }
